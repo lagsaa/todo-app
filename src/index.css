@@ -1,0 +1,92 @@
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background: #f8f9fa;
+  color: #333;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+/* To-Do Container */
+.todo-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark .todo-container {
+  background: #2c2c2c;
+  color: white;
+}
+
+/* Input & Button Styling */
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dark .todo-input {
+  background: #444;
+  border: none;
+  color: white;
+}
+
+.todo-button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-button:hover {
+  background: #0056b3;
+}
+
+/* To-Do List Items */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark .todo-item {
+  border-bottom: 1px solid #555;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Filter Buttons */
+.filter-buttons button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active {
+  background: #007bff;
+  color: white;
+}
+
